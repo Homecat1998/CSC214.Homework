@@ -26,41 +26,60 @@
                                     <action selector="secondButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n5j-tT-M7j"/>
                                 </connections>
                             </button>
-                            <view contentMode="top" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPe-Em-8x2">
-                                <rect key="frame" x="20" y="698" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="top" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPe-Em-8x2">
+                                <rect key="frame" x="0.0" y="698" width="80" height="80"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="UzT-Wd-kCz"/>
+                                    <constraint firstAttribute="width" constant="80" id="tPy-UP-kOh"/>
+                                </constraints>
                                 <viewLayoutGuide key="safeArea" id="s6F-Qw-wap"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="31f-OZ-0Dj">
-                                <rect key="frame" x="275" y="40" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="top" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jd-Mh-Y36">
+                                <rect key="frame" x="295" y="698" width="80" height="80"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <viewLayoutGuide key="safeArea" id="fgr-sj-cDP"/>
-                            </view>
-                            <view contentMode="top" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jd-Mh-Y36">
-                                <rect key="frame" x="275" y="698" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="As7-U2-dur"/>
+                                    <constraint firstAttribute="width" constant="80" id="Tsy-Jc-z3W"/>
+                                </constraints>
                                 <viewLayoutGuide key="safeArea" id="ayR-7F-Xry"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fd1-Ae-MSQ">
-                                <rect key="frame" x="20" y="40" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hH-3V-OOu">
+                                <rect key="frame" x="0.0" y="44" width="80" height="80"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <viewLayoutGuide key="safeArea" id="Em6-hI-Hqx"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="VFz-45-1RK"/>
+                                    <constraint firstAttribute="height" constant="80" id="b7n-DM-6VF"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="Yij-JG-X0a"/>
+                            </view>
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="31f-OZ-0Dj">
+                                <rect key="frame" x="295" y="44" width="80" height="80"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="KP4-vQ-Rjb"/>
+                                    <constraint firstAttribute="width" constant="80" id="n02-4V-Duz"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="fgr-sj-cDP"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="0JY-iL-2SS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="119-CK-fTe"/>
+                            <constraint firstItem="1hH-3V-OOu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8ai-FB-wPv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5jd-Mh-Y36" secondAttribute="trailing" id="CMn-yD-NhH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="31f-OZ-0Dj" secondAttribute="trailing" id="F6w-tO-9zv"/>
                             <constraint firstItem="0JY-iL-2SS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="P9H-Wt-Gly"/>
+                            <constraint firstItem="31f-OZ-0Dj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="XTF-Rp-qIX"/>
                             <constraint firstItem="0JY-iL-2SS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hGV-Wg-BGG"/>
+                            <constraint firstItem="1hH-3V-OOu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="te4-K0-Tip"/>
+                            <constraint firstItem="XPe-Em-8x2" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="u7R-eP-CMt"/>
+                            <constraint firstItem="5jd-Mh-Y36" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="vzc-Uk-ACg"/>
+                            <constraint firstItem="XPe-Em-8x2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zb1-98-URA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="square1" destination="fd1-Ae-MSQ" id="pPs-28-7jG"/>
+                        <outlet property="square1" destination="1hH-3V-OOu" id="86V-Ur-oQh"/>
                         <outlet property="square2" destination="31f-OZ-0Dj" id="jEu-WJ-AaV"/>
                         <outlet property="square3" destination="XPe-Em-8x2" id="e86-Xj-y7Q"/>
                         <outlet property="square4" destination="5jd-Mh-Y36" id="Yn4-vC-2TV"/>
