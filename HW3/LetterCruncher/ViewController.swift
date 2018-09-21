@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
+    
 
     @IBOutlet weak var displayLabel: UILabel!
     @IBOutlet weak var inputTextField: UITextField!
@@ -17,6 +18,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        // make it first responder to show the keyboard
+        inputTextField.becomeFirstResponder()
         
         displayLabel.text = ""
         inputTextField.autocapitalizationType = UITextAutocapitalizationType.allCharacters
