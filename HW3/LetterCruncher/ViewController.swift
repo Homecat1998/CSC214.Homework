@@ -38,9 +38,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
             } else {
                 return model.isValidInput(inputString: string, characterCount: current.count)
             }
+        } else {
+            return false
         }
 
-        return false
     }
     
     // MARK: - Actions

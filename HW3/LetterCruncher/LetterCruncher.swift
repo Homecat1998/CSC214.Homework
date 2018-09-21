@@ -14,6 +14,7 @@ class LetterCruncher {
     let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     var alphaDigits = ["ABC", "DEF", "GHI", "JKL", "MNO", "PQRS", "TUV", "WXYZ"]
     let maxDigits = 7
+    var index_loop = 1;
 
     init() {
         
@@ -36,10 +37,18 @@ class LetterCruncher {
     
     func isValidInput(inputString: String, characterCount: Int) -> Bool {
         if characterCount < maxDigits {
+            
             return true
-        }
+                
+            }
+        
         return false
     }
+
+
+        
+
+
     
     func makeDigitsString(inputString: String) -> String? {
         var outputString = String()

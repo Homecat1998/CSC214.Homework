@@ -35,6 +35,7 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                 <connections>
                                     <action selector="onTextInput:" destination="BYZ-38-t0r" eventType="editingChanged" id="Lvq-lc-37h"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="6XY-mL-faT"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LetterCruncher" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfB-7J-P7z">
