@@ -38,9 +38,12 @@ class LetterCruncher {
     func isValidInput(inputString: String, characterCount: Int) -> Bool {
         if characterCount < maxDigits {
             
-            return true
-                
-            }
+            let characterSet = CharacterSet(charactersIn: inputString)
+            let characterSetBig = CharacterSet(charactersIn: alphabet)
+            
+            if characterSet.isSubset(of: characterSetBig){ return true }
+            
+        }
         
         return false
     }

@@ -19,17 +19,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Letter Cruncher" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTF-df-XDk">
-                                <rect key="frame" x="87" y="203" width="202" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="LetterCruncher" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="i9a-Xz-mgX">
+                                <rect key="frame" x="40" y="193.5" width="295" height="54"/>
+                                <color key="textColor" red="1" green="0.25336249613596751" blue="0.24917737668663775" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="WTF-df-XDk" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Nb8-03-n80"/>
-                            <constraint firstItem="WTF-df-XDk" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" multiplier="0.66" id="aMr-Fl-0xc"/>
+                            <constraint firstItem="i9a-Xz-mgX" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" multiplier="0.66" id="HuQ-TU-nTm"/>
+                            <constraint firstItem="i9a-Xz-mgX" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Szf-lb-haw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

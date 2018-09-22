@@ -24,7 +24,6 @@
 		236BE522214EBBBD00A29008 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		236BE524214EBBBD00A29008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23F9DD0C214EDF7400DDE496 /* LetterCruncher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetterCruncher.swift; sourceTree = "<group>"; };
-		7A42CD5B21549D640025549F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,7 +159,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				236BE522214EBBBD00A29008 /* Base */,
-				7A42CD5B21549D640025549F /* en */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
