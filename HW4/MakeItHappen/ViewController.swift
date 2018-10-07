@@ -65,7 +65,7 @@ class ViewController: UIViewController {
 
     func showButtons(){
         
-        UIView.animate(withDuration: 1.0, delay: 3.0, animations: {
+        UIView.animate(withDuration: 1.0, delay: 2.0, animations: {
             self.button.center.y -= 200
         }, completion: { _ in
             self.makeItHappenBtnBottomConstraint.constant = 0
@@ -75,7 +75,7 @@ class ViewController: UIViewController {
     
     func stackViewAnimation (){
         
-        UIView.animate(withDuration: 1.0, delay: 2.0, animations: {
+        UIView.animate(withDuration: 1.0, delay: 3.0, animations: {
             self.stackView.center.x += 350
         }, completion: { _ in
             self.stackViewXConstraint.constant = 0
