@@ -15,6 +15,7 @@
 		239D7790210B7C6000562455 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 239D778E210B7C6000562455 /* LaunchScreen.storyboard */; };
 		239D7798210B7D3900562455 /* GameLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239D7797210B7D3900562455 /* GameLibrary.swift */; };
 		23E49EB3210CC0790083F60B /* GenreType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E49EB2210CC0790083F60B /* GenreType.swift */; };
+		7ABF90B921704C40006636A5 /* MediaTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABF90B821704C40006636A5 /* MediaTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		239D7791210B7C6000562455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		239D7797210B7D3900562455 /* GameLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLibrary.swift; sourceTree = "<group>"; };
 		23E49EB2210CC0790083F60B /* GenreType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreType.swift; sourceTree = "<group>"; };
+		7ABF90B821704C40006636A5 /* MediaTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			children = (
 				239D7785210B7C5F00562455 /* AppDelegate.swift */,
 				239D7787210B7C5F00562455 /* ViewController.swift */,
+				7ABF90B821704C40006636A5 /* MediaTableCell.swift */,
 				233A8AC0216958C7008EF9F3 /* Model */,
 				239D7789210B7C5F00562455 /* Main.storyboard */,
 				239D778C210B7C6000562455 /* Assets.xcassets */,
@@ -155,6 +158,7 @@
 				239D7788210B7C5F00562455 /* ViewController.swift in Sources */,
 				233A8ABF216958AE008EF9F3 /* Game.swift in Sources */,
 				23E49EB3210CC0790083F60B /* GenreType.swift in Sources */,
+				7ABF90B921704C40006636A5 /* MediaTableCell.swift in Sources */,
 				239D7798210B7D3900562455 /* GameLibrary.swift in Sources */,
 				239D7786210B7C5F00562455 /* AppDelegate.swift in Sources */,
 			);

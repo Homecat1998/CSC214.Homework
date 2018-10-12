@@ -16,41 +16,41 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
-        gameLibrary.addGame("The Legend of Zelda", .actionRPG, 1986)
-        gameLibrary.addGame("Diablo III", .actionRPG, 2012)
-        gameLibrary.addGame("Metroid", .actionRPG, 1986)
-        gameLibrary.addGame("Borderlands", .actionRPG, 2009)
+        gameLibrary.addGame("The Legend of Zelda", .actionRPG, 1986, 2)
+        gameLibrary.addGame("Diablo III", .actionRPG, 2012, 2)
+        gameLibrary.addGame("Metroid", .actionRPG, 1986, 1)
+        gameLibrary.addGame("Borderlands", .actionRPG, 2009, 3)
         
-        gameLibrary.addGame("BioShock Infinite", .firstPersonShooter, 2013)
-        gameLibrary.addGame("Doom", .firstPersonShooter, 2016)
-        gameLibrary.addGame("Dying Light", .firstPersonShooter, 2015)
-        gameLibrary.addGame("Evolve", .firstPersonShooter, 2015)
-        gameLibrary.addGame("Half-Life 3", .firstPersonShooter, 1997)
-        gameLibrary.addGame("Quake", .firstPersonShooter, 1999)
-        gameLibrary.addGame("Titanfall", .firstPersonShooter, 2014)
+        gameLibrary.addGame("BioShock Infinite", .firstPersonShooter, 2013, 3)
+        gameLibrary.addGame("Doom", .firstPersonShooter, 2016, 2)
+        gameLibrary.addGame("Dying Light", .firstPersonShooter, 2015, 1)
+        gameLibrary.addGame("Evolve", .firstPersonShooter, 2015, 2)
+        gameLibrary.addGame("Half-Life 3", .firstPersonShooter, 1997, 3)
+        gameLibrary.addGame("Quake", .firstPersonShooter, 1999, 1)
+        gameLibrary.addGame("Titanfall", .firstPersonShooter, 2014, 2)
         
-        gameLibrary.addGame("Final Fantasy IV", .jrpg, 1994)
-        gameLibrary.addGame("Ni No Kuni 2", .jrpg, 2017)
-        gameLibrary.addGame("Nights of Azure", .jrpg, 2017)
+        gameLibrary.addGame("Final Fantasy IV", .jrpg, 1994, 2)
+        gameLibrary.addGame("Ni No Kuni 2", .jrpg, 2017, 3)
+        gameLibrary.addGame("Nights of Azure", .jrpg, 2017, 1)
         
-        gameLibrary.addGame("Super Mario Odyssey", .platformer, 2017)
-        gameLibrary.addGame("Sonic Mania", .platformer, 2017)
-        gameLibrary.addGame("Runner 3", .platformer, 2018)
+        gameLibrary.addGame("Super Mario Odyssey", .platformer, 2017, 3)
+        gameLibrary.addGame("Sonic Mania", .platformer, 2017, 2)
+        gameLibrary.addGame("Runner 3", .platformer, 2018, 2)
         
-        gameLibrary.addGame("Super Mario Brothers", .sideScroller, 1985)
-        gameLibrary.addGame("Rayman Legends", .sideScroller, 2013)
-        gameLibrary.addGame("Shovel Knight", .sideScroller, 2014)
+        gameLibrary.addGame("Super Mario Brothers", .sideScroller, 1985, 3)
+        gameLibrary.addGame("Rayman Legends", .sideScroller, 2013, 3)
+        gameLibrary.addGame("Shovel Knight", .sideScroller, 2014, 2)
         
-        gameLibrary.addGame("Team Fortress 2", .teamShooter, 2007)
-        gameLibrary.addGame("Overwatch", .teamShooter, 2016)
-        gameLibrary.addGame("Left 4 Dead", .teamShooter, 2008)
+        gameLibrary.addGame("Team Fortress 2", .teamShooter, 2007, 2)
+        gameLibrary.addGame("Overwatch", .teamShooter, 2016, 2)
+        gameLibrary.addGame("Left 4 Dead", .teamShooter, 2008, 3)
         
-        gameLibrary.addGame("Kingdom Rush", .towerDefense, 2017)
-        gameLibrary.addGame("Orcs Must Die 2", .towerDefense, 2012)
-        gameLibrary.addGame("Warzone 2100", .towerDefense, 2017)
+        gameLibrary.addGame("Kingdom Rush", .towerDefense, 2017, 1)
+        gameLibrary.addGame("Orcs Must Die 2", .towerDefense, 2012, 2)
+        gameLibrary.addGame("Warzone 2100", .towerDefense, 2017, 2)
         
-        gameLibrary.addGame("Mass Effect", .westernRPG, 2007)
-        gameLibrary.addGame("The Witcher 3", .westernRPG, 2015)
+        gameLibrary.addGame("Mass Effect", .westernRPG, 2007, 1)
+        gameLibrary.addGame("The Witcher 3", .westernRPG, 2015, 3)
 
         /*
          **  Depencency injection to main view controller via window?.rootViewController

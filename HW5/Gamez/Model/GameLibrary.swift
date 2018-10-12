@@ -12,8 +12,8 @@ class GameLibrary {
     
     var games = [Game]()
 
-    func addGame(_ title: String, _ genreType: GenreType, _ releaseYear: Int) {
-        let game = Game(title: title, genreType: genreType, releaseYear: releaseYear)
+    func addGame(_ title: String, _ genreType: GenreType, _ releaseYear: Int, _ rating: Int) {
+        let game = Game(title: title, genreType: genreType, releaseYear: releaseYear, rating: rating)
         games.append(game)
     }
 

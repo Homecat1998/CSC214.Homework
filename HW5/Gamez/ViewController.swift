@@ -25,6 +25,7 @@ class ViewController: UITableViewController {
         tableView.scrollIndicatorInsets = insets
         
         tableView.contentInsetAdjustmentBehavior = .never
+        tableView.rowHeight = 64
     }
     
     override var prefersStatusBarHidden: Bool { return false }
@@ -49,16 +50,28 @@ class ViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell") else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "MediaTableCell") as? MediaTableCell else {
             fatalError("Expected UITableViewCell")
         }
+        
+
 
         if let type = GenreType(rawValue: indexPath.section) {
             
+            
             var genreGames = library.games(for: type)
             let game = genreGames[indexPath.row]
-            cell.textLabel?.text = game.title
-            cell.detailTextLabel?.text = game.releaseYear.description
+            cell.title?.text = game.title
+            cell.releaseDate?.text = game.releaseYear.description
+            let rating = game.rating
+            if rating == 1{
+                cell.ratingImage?.image = UIImage(named: "stars_01")
+            } else if (rating == 2){
+                cell.ratingImage?.image = UIImage(named: "stars_02")
+            } else if (rating == 3){
+                cell.ratingImage?.image = UIImage(named: "stars_03")
+            }
+            
         }
         return cell
     }
