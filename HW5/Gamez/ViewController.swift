@@ -25,6 +25,8 @@ class ViewController: UITableViewController {
         tableView.scrollIndicatorInsets = insets
         
         tableView.contentInsetAdjustmentBehavior = .never
+        
+        // set the height
         tableView.rowHeight = 64
     }
     
@@ -63,6 +65,8 @@ class ViewController: UITableViewController {
             let game = genreGames[indexPath.row]
             cell.title?.text = game.title
             cell.releaseDate?.text = game.releaseYear.description
+            
+            // getting the right image
             let rating = game.rating
             if rating == 1{
                 cell.ratingImage?.image = UIImage(named: "stars_01")
