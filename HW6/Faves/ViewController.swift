@@ -32,9 +32,12 @@ class ViewController: UITableViewController {
             fatalError("Expected MediaTableCell")
         }
         
+        
         if let movie = myMovie?.movies[indexPath.row] {
             cell.title?.text = movie.title
             cell.actor?.text = String(describing: movie.actor)
+        } else {
+            print("nil")
         }
         
         return cell
@@ -44,6 +47,8 @@ class ViewController: UITableViewController {
     // MARK: - Add Media
     
     func addMovie(barButtonItem: UIBarButtonItem) {
+        
+        print("is Adding")
         
         let alert = UIAlertController(
             title: NSLocalizedString("str_selectItemToAdd", comment: ""),
@@ -143,6 +148,7 @@ class ViewController: UITableViewController {
     
     @IBAction func addItems(_ sender: UIBarButtonItem) {
         addMovie(barButtonItem: sender)
+        print("adding")
     }
     
 
