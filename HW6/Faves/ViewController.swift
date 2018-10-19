@@ -10,13 +10,14 @@ import UIKit
 
 class ViewController: UITableViewController {
     
-    var myMovie : Model?
+    var myMovie : Model!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 75
+        print(myMovie.movies.count)
     }
 
     
@@ -25,10 +26,25 @@ class ViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override var prefersStatusBarHidden: Bool { return false }
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 0
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if let size = myMovie?.movies {
+            return size.count
+        }
+        return 0
+    }
+    
     // creating sells
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "Identifier") as? MovieTableCell else {
+        print("Creating cells")
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell") as? MovieTableCell else {
             fatalError("Expected MediaTableCell")
         }
         
@@ -48,7 +64,6 @@ class ViewController: UITableViewController {
     
     func addMovie(barButtonItem: UIBarButtonItem) {
         
-        print("is Adding")
         
         let alert = UIAlertController(
             title: NSLocalizedString("str_selectItemToAdd", comment: ""),
@@ -57,6 +72,7 @@ class ViewController: UITableViewController {
         
         
         let addMovieAction = UIAlertAction(title: NSLocalizedString("str_movie", comment: ""), style: .default) { _ in
+            print("add movie")
             if let movie = self.myMovie?.randomMovie() {
                 self.myMovie?.addMovie(movie)
                 self.tableView.reloadData()
