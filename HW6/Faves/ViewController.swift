@@ -111,9 +111,6 @@ class ViewController: UITableViewController {
     
     func deletionAlert(title: String, completion: @escaping (UIAlertAction) -> Void) {
         
-        //        let alert = UIAlertController(title: NSLocalizedString("str_warning", comment: ""),
-        //                                                message: NSLocalizedString("str_cantUndoWarning", comment: ""),
-        //                                                preferredStyle: .actionSheet)
         let alertMsg = NSLocalizedString("str_deleteWarning", comment: "").replacingOccurrences(of: "_", with: title)
         let alert = UIAlertController(title: NSLocalizedString("str_warning", comment: ""),
                                       message: alertMsg,
