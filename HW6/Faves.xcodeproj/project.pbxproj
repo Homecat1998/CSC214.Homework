@@ -100,12 +100,12 @@
 				7A504BCC217989D4001D5862 /* Localizable */,
 				7A504B9721796503001D5862 /* AppDelegate.swift */,
 				7A504B9921796503001D5862 /* ViewController.swift */,
+				7A504BCA21797971001D5862 /* MovieTableCell.swift */,
 				7A504B9B21796503001D5862 /* Main.storyboard */,
 				7A504B9E21796505001D5862 /* Assets.xcassets */,
 				7A504BC721796ACA001D5862 /* Models */,
 				7A504BA021796505001D5862 /* LaunchScreen.storyboard */,
 				7A504BA321796505001D5862 /* Info.plist */,
-				7A504BCA21797971001D5862 /* MovieTableCell.swift */,
 			);
 			path = Faves;
 			sourceTree = "<group>";

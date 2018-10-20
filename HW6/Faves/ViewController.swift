@@ -28,15 +28,22 @@ class ViewController: UITableViewController {
     
     override var prefersStatusBarHidden: Bool { return false }
     
+    
+    // data source
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 0
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let size = myMovie?.movies {
+            print("have size of", self.myMovie.movies.count)
             return size.count
         }
         return 0
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section:Int) -> String? {
+        return ""
     }
     
     // creating sells
@@ -45,13 +52,14 @@ class ViewController: UITableViewController {
         print("Creating cells")
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell") as? MovieTableCell else {
-            fatalError("Expected MediaTableCell")
+            fatalError("Expected MovieTableCell")
         }
         
         
         if let movie = myMovie?.movies[indexPath.row] {
             cell.title?.text = movie.title
             cell.actor?.text = String(describing: movie.actor)
+
         } else {
             print("nil")
         }
@@ -76,6 +84,7 @@ class ViewController: UITableViewController {
             if let movie = self.myMovie?.randomMovie() {
                 self.myMovie?.addMovie(movie)
                 self.tableView.reloadData()
+                print(self.myMovie.movies.count)
             }
         }
         

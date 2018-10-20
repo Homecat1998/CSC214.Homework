@@ -12,7 +12,7 @@
         <!--Root View Controller-->
         <scene sceneID="O20-b8-94W">
             <objects>
-                <tableViewController id="NZQ-fI-Lkm" customClass="ViewController" customModule="Faves" sceneMemberID="viewController">
+                <tableViewController id="NZQ-fI-Lkm" customClass="ViewController" customModule="Faves" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="OZR-w1-FDg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -61,8 +61,8 @@
                         </prototypes>
                         <sections/>
                         <connections>
-                            <outlet property="dataSource" destination="NZQ-fI-Lkm" id="bfn-YQ-d4x"/>
-                            <outlet property="delegate" destination="NZQ-fI-Lkm" id="9kE-O5-lwz"/>
+                            <outlet property="dataSource" destination="NZQ-fI-Lkm" id="czW-De-ju2"/>
+                            <outlet property="delegate" destination="NZQ-fI-Lkm" id="122-j4-7T0"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="JMs-qW-B1s">
@@ -77,6 +77,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="view" destination="OZR-w1-FDg" id="KtN-WO-LG5"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ckh-mv-Wg9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
