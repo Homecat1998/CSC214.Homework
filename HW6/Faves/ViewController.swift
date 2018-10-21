@@ -121,6 +121,7 @@ class ViewController: UITableViewController {
     
     // moving
     override func tableView(_ tableView: UITableView, targetIndexPathForMoveFromRowAt sourceIndexPath: IndexPath, toProposedIndexPath proposedDestinationIndexPath: IndexPath) -> IndexPath {
+        
         if sourceIndexPath.section != proposedDestinationIndexPath.section {
             return sourceIndexPath
         }
@@ -128,11 +129,23 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
-        myMovie?.moveMovie(fromIndex: sourceIndexPath.row, toIndex: destinationIndexPath.row)
+        
+        
+        if let movie = myMovie?.movies[sourceIndexPath.row]{
+            movementAlert(title: movie.title, completion: {_ in
+                self.myMovie?.moveMovie(fromIndex: sourceIndexPath.row, toIndex: destinationIndexPath.row)
+                self.tableView.reloadData()
+            })
+        }
+
+        self.tableView.reloadData()
+
+        
     }
+    
 
     
-    // MARK: - Deletion Alert
+    // Deletion Alert
     
     func deletionAlert(title: String, completion: @escaping (UIAlertAction) -> Void) {
         
@@ -161,8 +174,38 @@ class ViewController: UITableViewController {
         present(alert, animated: true, completion: nil)
     }
 
+    
+    // Movement Alert
+    
+    func movementAlert(title: String, completion: @escaping (UIAlertAction) -> Void) {
+        
+        let alertMsg = NSLocalizedString("str_moveWarning", comment: "").replacingOccurrences(of: "_", with: title)
+        let alert = UIAlertController(title: NSLocalizedString("str_warning", comment: ""),
+                                      message: alertMsg,
+                                      preferredStyle: .actionSheet)
+        
+        let moveAction = UIAlertAction(title: NSLocalizedString("str_move", comment: ""),
+                                         style: .destructive, handler: completion)
+        let cancelAction = UIAlertAction(title: NSLocalizedString("str_cancel", comment: ""),
+                                         style: .cancel, handler:nil)
+        
+        alert.addAction(cancelAction)
+        alert.addAction(moveAction)
+        
+        /*
+         **  In this case we need a source for the popover as well, but don't have a handy UIBarButtonItem.
+         **  As alternative we therefore use the sourceView/sourceRect combination and specify a rectangel
+         **  centered in the view of our viewController.
+         */
+        alert.popoverPresentationController?.permittedArrowDirections = []
+        alert.popoverPresentationController?.sourceView = self.view
+        alert.popoverPresentationController?.sourceRect = CGRect(x: self.view.frame.midX, y: self.view.frame.midY, width: 0, height: 0)
+        
+        present(alert, animated: true, completion: nil)
+    }
+    
 
-    // MARK: - Actions
+    // Actions
     
     @IBAction func toggleEditingMode(_ sender: Any) {
         setEditing(!isEditing, animated: true)
