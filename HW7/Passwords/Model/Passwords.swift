@@ -8,6 +8,15 @@
 
 import Foundation
 
+let kAppGroupBundleID           = "group.com.examples.Passwords"
+
+/*
+ ** default items
+ */
+let dAppVersion                 = "app_version"
+let dNumLaunches                = "num_launches"
+let dLastLaunch                 = Date()
+
 
 struct PasswordItem: Equatable, Codable {
     var description: String

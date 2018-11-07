@@ -15,6 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var passwords: Passwords!
     
+    let defaults = UserDefaults(suiteName: kAppGroupBundleID)!
+    
+    override init() {
+        defaults.set(Bundle.main.build, forKey: dAppVersion)
+    }
+    
     var dataFileName = "PasswordsFile"
     
     lazy var fileURL: URL = {
@@ -23,6 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        initDefaults()
 
         loadData()
         if let navController = window?.rootViewController as? UINavigationController,
@@ -33,8 +41,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
+        let currentDate = Date().timeIntervalSince1970
+        defaults.set(dLastLaunch, forKey: String (currentDate))
+        let numLaunches = defaults.integer(forKey: dNumLaunches) + 1
+        defaults.set(numLaunches, forKey: dNumLaunches)
         saveData()
     }
+    
+    
 
     func applicationDidEnterBackground(_ application: UIApplication) { }
 
@@ -83,6 +97,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             fatalError("No data at \(fileURL.path)!")
         }
     }
+    
+    func initDefaults() {
+        if let path = Bundle.main.path(forResource: "Defaults", ofType: "plist"),
+            let dictionary = NSDictionary(contentsOfFile: path) {
+            defaults.register(defaults: dictionary as! [String : Any])
+            defaults.synchronize()
+        }
+    }
+    
 
 }
 

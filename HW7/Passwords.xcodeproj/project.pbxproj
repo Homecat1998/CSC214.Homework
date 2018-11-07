@@ -14,10 +14,11 @@
 		23103C6C218E72700006A9AB /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23103C6B218E72700006A9AB /* TableViewController.swift */; };
 		23535E00218E756500158522 /* Passwords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23535DFF218E756500158522 /* Passwords.swift */; };
 		23535E07218E7C2100158522 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 23535E04218E7C2100158522 /* Localizable.strings */; };
+		7A71548021938915004B49F8 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71547F21938915004B49F8 /* BundleExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		23103C56218E72590006A9AB /* Passwords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Passwords.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23103C56218E72590006A9AB /* Passwords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Passwords.app; path = "/Users/zzhong9/Desktop/CSC214.Homework/HW7/build/Debug-iphoneos/Passwords.app"; sourceTree = "<absolute>"; };
 		23103C59218E72590006A9AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23103C5E218E72590006A9AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		23103C60218E725A0006A9AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -25,8 +26,10 @@
 		23103C65218E725A0006A9AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23103C6B218E72700006A9AB /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		23535DFF218E756500158522 /* Passwords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Passwords.swift; sourceTree = "<group>"; };
-		23535E05218E7C2100158522 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
-		23535E06218E7C2100158522 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7A71547A2193853F004B49F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7A71547D219387BA004B49F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		7A71547F21938915004B49F8 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
+		7A71548121938FCF004B49F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +46,9 @@
 		23103C4D218E72590006A9AB = {
 			isa = PBXGroup;
 			children = (
+				7A71547E219388FF004B49F8 /* Extensions */,
 				23103C58218E72590006A9AB /* Passwords */,
-				23103C57218E72590006A9AB /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		23103C57218E72590006A9AB /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				23103C56218E72590006A9AB /* Passwords.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		23103C58218E72590006A9AB /* Passwords */ = {
@@ -93,6 +88,14 @@
 				23535E04218E7C2100158522 /* Localizable.strings */,
 			);
 			path = Localizable;
+			sourceTree = "<group>";
+		};
+		7A71547E219388FF004B49F8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7A71547F21938915004B49F8 /* BundleExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +143,7 @@
 				de,
 			);
 			mainGroup = 23103C4D218E72590006A9AB;
-			productRefGroup = 23103C57218E72590006A9AB /* Products */;
+			productRefGroup = 23103C4D218E72590006A9AB;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -171,6 +174,7 @@
 				23535E00218E756500158522 /* Passwords.swift in Sources */,
 				23103C5A218E72590006A9AB /* AppDelegate.swift in Sources */,
 				23103C6C218E72700006A9AB /* TableViewController.swift in Sources */,
+				7A71548021938915004B49F8 /* BundleExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +185,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				23103C5E218E72590006A9AB /* Base */,
+				7A71547D219387BA004B49F8 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -196,8 +201,8 @@
 		23535E04218E7C2100158522 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				23535E05218E7C2100158522 /* de */,
-				23535E06218E7C2100158522 /* en */,
+				7A71547A2193853F004B49F8 /* Base */,
+				7A71548121938FCF004B49F8 /* en */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";

@@ -6,11 +6,12 @@
   Copyright © 2018 University of Rochester. All rights reserved.
 */
 
-"str_prompt"                             = "New password:";
+"str_prompt"                            = "New Password:";
 
 "str_save"                              = "Save";
 "str_cancel"                            = "Cancel";
-"str_done"                              = "Done";
+"str_done"                              = "Finished";
 
 "str_password"                          = "Password";
 "str_username"                          = "Username";
+
