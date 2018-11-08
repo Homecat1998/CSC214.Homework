@@ -16,6 +16,22 @@ class TableViewController: UITableViewController {
         super.viewDidLoad()
     }
     
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "DetailViewSegue" {
+            
+            if let detailViewController = segue.destination as? DetailViewController  {
+                
+                if let indexPath = tableView.indexPathForSelectedRow {
+                    detailViewController.password = passwords?.passwordList[indexPath.row]
+                }
+            }
+        }
+    }
+    
+    
+    
     func addItemAlert() {
         
         var notEmpty1 = false
