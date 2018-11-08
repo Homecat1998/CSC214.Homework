@@ -16,6 +16,7 @@
 		23535E07218E7C2100158522 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 23535E04218E7C2100158522 /* Localizable.strings */; };
 		7A71548021938915004B49F8 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71547F21938915004B49F8 /* BundleExtension.swift */; };
 		7A83C1082193BA8600B48C63 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A83C1072193BA8600B48C63 /* DetailViewController.swift */; };
+		7A83C10A2193CA0500B48C63 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A83C1092193CA0500B48C63 /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		7A71548121938FCF004B49F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7A83C1062193B9BE00B48C63 /* Passwords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Passwords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A83C1072193BA8600B48C63 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		7A83C1092193CA0500B48C63 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				23103C59218E72590006A9AB /* AppDelegate.swift */,
 				7A83C1072193BA8600B48C63 /* DetailViewController.swift */,
 				23103C6B218E72700006A9AB /* TableViewController.swift */,
+				7A83C1092193CA0500B48C63 /* AboutViewController.swift */,
 				23103C65218E725A0006A9AB /* Info.plist */,
 				23535DFE218E754E00158522 /* Model */,
 				23535E03218E7C2100158522 /* Localizable */,
@@ -178,6 +181,7 @@
 				23535E00218E756500158522 /* Passwords.swift in Sources */,
 				23103C5A218E72590006A9AB /* AppDelegate.swift in Sources */,
 				7A83C1082193BA8600B48C63 /* DetailViewController.swift in Sources */,
+				7A83C10A2193CA0500B48C63 /* AboutViewController.swift in Sources */,
 				23103C6C218E72700006A9AB /* TableViewController.swift in Sources */,
 				7A71548021938915004B49F8 /* BundleExtension.swift in Sources */,
 			);

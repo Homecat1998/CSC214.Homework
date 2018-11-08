@@ -14,6 +14,7 @@ class TableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.setToolbarHidden(false, animated: true)
     }
     
     
