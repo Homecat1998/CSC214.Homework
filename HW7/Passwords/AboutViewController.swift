@@ -41,7 +41,7 @@ class AboutViewController: UIViewController {
         appBuild.text = Bundle.main.build
         copyright.text = Bundle.main.copyright
         launchNum.text = defaults.integer(forKey: dNumLaunches).description
-//        launchDate.text = dateFormatter.string(from: defaults.object(forKey: dLastLaunch))
+        launchDate.text = dateFormatter.string(for: dLastLaunch)
 
         // Do any additional setup after loading the view.
         backBtn.setTitle(NSLocalizedString("str_done", comment: ""), for: .normal)
