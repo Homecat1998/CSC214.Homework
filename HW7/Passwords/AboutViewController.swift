@@ -31,17 +31,13 @@ class AboutViewController: UIViewController {
         
         view.backgroundColor = UIColor(red: 0.898, green: 0.898, blue: 0.898, alpha: 1.0)
         
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .medium
-        dateFormatter.timeStyle = .short
-        dateFormatter.locale = Locale.current
         
         appName.text = Bundle.main.displayName
         appVersion.text = Bundle.main.version
         appBuild.text = Bundle.main.build
         copyright.text = Bundle.main.copyright
         launchNum.text = defaults.integer(forKey: dNumLaunches).description
-        launchDate.text = dateFormatter.string(for: dLastLaunch)
+        launchDate.text = defaults.string(forKey: dAccessDate)
 
         // Do any additional setup after loading the view.
         backBtn.setTitle(NSLocalizedString("str_done", comment: ""), for: .normal)
