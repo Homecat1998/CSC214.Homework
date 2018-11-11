@@ -15,7 +15,7 @@ let kAppGroupBundleID           = "group.com.examples.Passwords"
  */
 let dAppVersion                 = "app_version"
 let dNumLaunches                = "num_launches"
-let dLastLaunch                 = "accessDate"
+let dAccessDate                 = "accessDate"
 
 
 struct PasswordItem: Equatable, Codable {
