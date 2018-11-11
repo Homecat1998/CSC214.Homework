@@ -41,8 +41,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
-        let currentDate = Date()
-        defaults.set(dLastLaunch, forKey: currentDate.description)
+        let numLaunches = defaults.integer(forKey: dNumLaunches) + 1
+        defaults.set(numLaunches, forKey: dNumLaunches)
         
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .medium
