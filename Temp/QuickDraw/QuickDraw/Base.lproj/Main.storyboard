@@ -33,7 +33,62 @@
                     <view key="view" contentMode="scaleToFill" id="svH-Pt-448" customClass="DrawView" customModule="QuickDraw" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cSp-rp-Iyd">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem image="eraser" id="cI4-iB-q8I">
+                                        <color key="tintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                        <connections>
+                                            <action selector="onEraserBtn:" destination="JEX-9P-axG" id="GaT-Cj-edo"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Ukg-3O-eQx"/>
+                                    <barButtonItem image="square" id="kwr-0K-Yv0">
+                                        <color key="tintColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="onSquareShapeBtn:" destination="JEX-9P-axG" id="Dgg-qX-qt6"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Item" image="circle" id="2Vi-Fc-aG6">
+                                        <color key="tintColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="onRoundShapeBtn:" destination="JEX-9P-axG" id="3F4-IJ-Mds"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="K7x-gl-SBv"/>
+                                    <barButtonItem image="colorDrop" id="WRd-tR-Opu">
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="onBlackColorBtn:" destination="JEX-9P-axG" id="b0z-Nv-pU0"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem image="colorDrop" id="eyO-sv-YdG">
+                                        <color key="tintColor" red="0.82905602331606221" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <connections>
+                                            <action selector="onRedColorBtn:" destination="JEX-9P-axG" id="Ikt-fi-piW"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem image="colorDrop" id="Ppn-TZ-6Aq">
+                                        <color key="tintColor" red="0.03521969308490977" green="0.61334196891191706" blue="0.033550392404713004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <connections>
+                                            <action selector="onGreenColorBtn:" destination="JEX-9P-axG" id="Q5I-FZ-g8F"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem image="colorDrop" id="6xz-Fk-nQ5">
+                                        <connections>
+                                            <action selector="onBlueColorBtn:" destination="JEX-9P-axG" id="A0c-6d-dyj"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cSp-rp-Iyd" firstAttribute="bottom" secondItem="VUw-jc-0yf" secondAttribute="bottom" id="5Fb-PM-9lF"/>
+                            <constraint firstItem="cSp-rp-Iyd" firstAttribute="leading" secondItem="VUw-jc-0yf" secondAttribute="leading" id="7n1-Gs-3YD"/>
+                            <constraint firstItem="cSp-rp-Iyd" firstAttribute="trailing" secondItem="VUw-jc-0yf" secondAttribute="trailing" id="y1Y-I9-D2N"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="VUw-jc-0yf"/>
                     </view>
                     <toolbarItems/>
@@ -120,6 +175,12 @@
             <point key="canvasLocation" x="-45" y="129"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="circle" width="32" height="32"/>
+        <image name="colorDrop" width="32" height="32"/>
+        <image name="eraser" width="32" height="32"/>
+        <image name="square" width="32" height="32"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="6S0-TO-JiA"/>
     </inferredMetricsTieBreakers>
