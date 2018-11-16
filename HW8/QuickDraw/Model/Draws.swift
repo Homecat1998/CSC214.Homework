@@ -30,6 +30,10 @@ class Draws: Codable {
             return -1
         }
     }
+    func addFirst (_ item: QDDocument) {
+        
+        draws.append(item)
+    }
     
     
     func addItem(_ item: QDDocument) {
@@ -42,8 +46,8 @@ class Draws: Codable {
     func removeItem(_ item: QDDocument) {
         if let index = draws.index(of: item) {
             draws.remove(at: index)
-            print("removing \(numbers[index + 1])")
-            numbers.remove(at: (index + 1))
+            print("removing \(numbers[index])")
+            numbers.remove(at: index)
         }
     }
     
@@ -52,9 +56,9 @@ class Draws: Codable {
             let item = draws[fromIndex]
             draws.remove(at: fromIndex)
             draws.insert(item, at: toIndex)
-            let number = numbers[fromIndex + 1]
-            numbers.remove(at: (fromIndex + 1))
-            numbers.insert(number, at: (toIndex + 1))
+            let number = numbers[fromIndex]
+            numbers.remove(at: fromIndex)
+            numbers.insert(number, at: toIndex)
         }
     }
     

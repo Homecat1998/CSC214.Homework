@@ -28,8 +28,7 @@ class MasterViewController: UITableViewController {
         }
         print("Loading")
         if draws.draws.count == 0 {
-            let newDraw = QDDocument(title: "Untitled1")
-            draws.addItem(newDraw)
+            insertAndSelectDocumentZero()
         }
     }
 
@@ -121,21 +120,17 @@ class MasterViewController: UITableViewController {
     
     
     
-    @IBAction func onAddBtn(_ sender: Any) {
-        print(draws.getNextNum())
-        let nextFile = "Untitled\(draws.getNextNum())"
-        let newDraw = QDDocument(title: nextFile)
-        draws.addItem(newDraw)
-        tableView.reloadData()
-    }
-    
-    @IBAction func toggleEdit(_ sender: Any) {
-        setEditing(!isEditing, animated: true)
-    }
-    
     // swipe disabled
     override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
         return (tableView.isEditing) ? .delete : .none
+    }
+    
+    func insertAndSelectDocumentZero() {
+        
+        let newDraw = QDDocument(title: "Untitled")
+        draws.addFirst(newDraw)
+        
+        
     }
     
     
