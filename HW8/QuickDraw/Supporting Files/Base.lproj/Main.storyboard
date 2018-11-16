@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cO1-hw-rwU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,6 +10,35 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="bgb-nZ-kSD">
+            <objects>
+                <navigationController id="2MA-zM-rq8" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="axg-Pu-KXP">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9Tr-r2-1Ug" kind="relationship" relationship="rootViewController" id="NoB-Cc-mBW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y4b-Fx-nrX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2134" y="-927"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="2ta-Ei-PKv">
+            <objects>
+                <splitViewController id="p1C-70-4t8" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="2MA-zM-rq8" kind="relationship" relationship="masterViewController" id="2dw-hS-HEu"/>
+                        <segue destination="cO1-hw-rwU" kind="relationship" relationship="detailViewController" id="tR1-Az-FvG"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gg2-vI-CuB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3087" y="-601"/>
+        </scene>
         <!--Master-->
         <scene sceneID="5k9-1T-DO4">
             <objects>
@@ -26,9 +55,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ShowDetail" id="hc0-JF-UBh"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -48,10 +74,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="cO1-hw-rwU" kind="showDetail" id="pbP-6V-ZJi"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dDI-dE-LwE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-258" y="55"/>
+            <point key="canvasLocation" x="-1116" y="-927"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NPe-9e-fj9">
@@ -62,12 +91,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="9Tr-r2-1Ug" kind="relationship" relationship="rootViewController" id="f4I-hr-vaa"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="6Wo-mk-XMN"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gQX-kc-dEb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1210" y="55"/>
+            <point key="canvasLocation" x="-2135" y="-168"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -134,13 +163,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="UEu-5B-BVw"/>
                     <connections>
                         <outlet property="drawView" destination="8bC-Xf-vdC" id="kA4-h8-i2S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="638" y="55"/>
+            <point key="canvasLocation" x="-1116" y="-168"/>
         </scene>
     </scenes>
     <resources>
@@ -149,4 +179,7 @@
         <image name="eraser" width="32" height="32"/>
         <image name="square" width="32" height="32"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="tR1-Az-FvG"/>
+    </inferredMetricsTieBreakers>
 </document>

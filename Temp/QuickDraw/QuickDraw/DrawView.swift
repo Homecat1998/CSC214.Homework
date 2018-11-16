@@ -16,7 +16,7 @@ class DrawView: UIView {
     
     weak var delegate: DrawViewDelegate?
     
-    var currentLine: QDLine!
+    var currentLine: QDLine?
     let currentLineColor = UIColor.green
     
     var tint = UIColor.black {
@@ -41,7 +41,7 @@ class DrawView: UIView {
         
         if currentLine != nil {
             currentLineColor.setStroke()
-            strokeLine(currentLine)
+            strokeLine(currentLine!)
         }
     }
     
@@ -89,7 +89,7 @@ class DrawView: UIView {
         guard let touch = touches.first else { return }
         
         let location = touch.location(in: self)
-        currentLine.addPoint(location)
+        currentLine?.addPoint(location)
         
         setNeedsDisplay()
     }
@@ -98,8 +98,10 @@ class DrawView: UIView {
         guard let touch = touches.first else { return }
         
         let location = touch.location(in: self)
-        currentLine.addPoint(location)
-        lines.append(currentLine)
+        currentLine?.addPoint(location)
+        if currentLine != nil {
+            lines.append(currentLine!)
+        }
         
         delegate?.updateLines(self, lines: lines)
         

@@ -15,15 +15,15 @@
 		23EB21BD2118FB4500DF2D58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23EB21BB2118FB4500DF2D58 /* Main.storyboard */; };
 		23EB21BF2118FB4600DF2D58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23EB21BE2118FB4600DF2D58 /* Assets.xcassets */; };
 		23EB21C22118FB4600DF2D58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23EB21C02118FB4600DF2D58 /* LaunchScreen.storyboard */; };
-		7A14E1D9219D0AB300C3E2DA /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A14E1D8219D0AB300C3E2DA /* TableViewController.swift */; };
 		7A14E1DB219D114400C3E2DA /* Draws.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A14E1DA219D114400C3E2DA /* Draws.swift */; };
 		7A14E1DE219D2C6E00C3E2DA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7A14E1DD219D2C6E00C3E2DA /* Localizable.strings */; };
+		7AA83B5A219E944D00C937C1 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA83B59219E944D00C937C1 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		238BC86F219330370039B6FB /* QDDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QDDocument.swift; sourceTree = "<group>"; };
 		238BC871219330370039B6FB /* QDLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QDLine.swift; sourceTree = "<group>"; };
-		23DDAD4D211B3DC8002E2A6F /* DrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
+		23DDAD4D211B3DC8002E2A6F /* DrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DrawView.swift; path = ../../HW8_new/QuickDraw/QuickDraw/DrawView.swift; sourceTree = "<group>"; };
 		23EB21B42118FB4500DF2D58 /* QuickDraw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickDraw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23EB21B72118FB4500DF2D58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23EB21B92118FB4500DF2D58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,9 +31,9 @@
 		23EB21BE2118FB4600DF2D58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23EB21C12118FB4600DF2D58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23EB21C32118FB4600DF2D58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7A14E1D8219D0AB300C3E2DA /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		7A14E1DA219D114400C3E2DA /* Draws.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Draws.swift; sourceTree = "<group>"; };
 		7A14E1DD219D2C6E00C3E2DA /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		7AA83B59219E944D00C937C1 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,10 +87,10 @@
 			isa = PBXGroup;
 			children = (
 				7A14E1DC219D2C5400C3E2DA /* Localizable */,
-				7A14E1D8219D0AB300C3E2DA /* TableViewController.swift */,
 				23EB21B72118FB4500DF2D58 /* AppDelegate.swift */,
 				23DDAD4D211B3DC8002E2A6F /* DrawView.swift */,
 				23EB21B92118FB4500DF2D58 /* ViewController.swift */,
+				7AA83B59219E944D00C937C1 /* TableViewController.swift */,
 				238BC86E219330370039B6FB /* Model */,
 				238BC8772193303F0039B6FB /* Supporting Files */,
 				23EB21C32118FB4600DF2D58 /* Info.plist */,
@@ -179,7 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23EB21BA2118FB4500DF2D58 /* ViewController.swift in Sources */,
-				7A14E1D9219D0AB300C3E2DA /* TableViewController.swift in Sources */,
+				7AA83B5A219E944D00C937C1 /* TableViewController.swift in Sources */,
 				238BC873219330370039B6FB /* QDDocument.swift in Sources */,
 				7A14E1DB219D114400C3E2DA /* Draws.swift in Sources */,
 				23EB21B82118FB4500DF2D58 /* AppDelegate.swift in Sources */,

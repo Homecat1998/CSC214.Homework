@@ -1,0 +1,13 @@
+/* 
+  File.strings
+  QuickDraw
+
+  Created by Zhong, Zhetao on 11/14/18.
+  Copyright © 2018 CSC214 Instructor. All rights reserved.
+*/
+"str_cancel"                            = "Cancel";
+"str_add"                               = "Add";
+"str_delete"                            = "Delete";
+
+"str_warning"                     = "Do you really want to delete?";
+"str_untitled"                      = "Untitled";
