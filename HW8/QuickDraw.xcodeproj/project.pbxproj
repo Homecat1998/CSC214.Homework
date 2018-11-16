@@ -7,37 +7,76 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		238BC873219330370039B6FB /* QDDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238BC86F219330370039B6FB /* QDDocument.swift */; };
-		238BC875219330370039B6FB /* QDLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238BC871219330370039B6FB /* QDLine.swift */; };
-		23DDAD4E211B3DC8002E2A6F /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DDAD4D211B3DC8002E2A6F /* DrawView.swift */; };
-		23EB21B82118FB4500DF2D58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EB21B72118FB4500DF2D58 /* AppDelegate.swift */; };
-		23EB21BA2118FB4500DF2D58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EB21B92118FB4500DF2D58 /* ViewController.swift */; };
-		23EB21BD2118FB4500DF2D58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23EB21BB2118FB4500DF2D58 /* Main.storyboard */; };
-		23EB21BF2118FB4600DF2D58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23EB21BE2118FB4600DF2D58 /* Assets.xcassets */; };
-		23EB21C22118FB4600DF2D58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23EB21C02118FB4600DF2D58 /* LaunchScreen.storyboard */; };
-		7A14E1DB219D114400C3E2DA /* Draws.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A14E1DA219D114400C3E2DA /* Draws.swift */; };
-		7A14E1DE219D2C6E00C3E2DA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7A14E1DD219D2C6E00C3E2DA /* Localizable.strings */; };
-		7AA83B5A219E944D00C937C1 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA83B59219E944D00C937C1 /* TableViewController.swift */; };
+		7A697524219E7D3400C5D3AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A697523219E7D3400C5D3AD /* AppDelegate.swift */; };
+		7A697528219E7D3400C5D3AD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A697527219E7D3400C5D3AD /* DetailViewController.swift */; };
+		7A69752B219E7D3400C5D3AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A697529219E7D3400C5D3AD /* Main.storyboard */; };
+		7A697530219E7D3500C5D3AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A69752E219E7D3500C5D3AD /* LaunchScreen.storyboard */; };
+		7A69753B219E7D3500C5D3AD /* QuickDrawTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A69753A219E7D3500C5D3AD /* QuickDrawTests.swift */; };
+		7A697546219E7D3500C5D3AD /* QuickDrawUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A697545219E7D3500C5D3AD /* QuickDrawUITests.swift */; };
+		7A697562219E7D7E00C5D3AD /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A697561219E7D7E00C5D3AD /* DrawView.swift */; };
+		7A697586219E91B000C5D3AD /* Draws.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A697582219E91B000C5D3AD /* Draws.swift */; };
+		7A697587219E91B000C5D3AD /* QDDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A697583219E91B000C5D3AD /* QDDocument.swift */; };
+		7A697588219E91B000C5D3AD /* QDLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A697584219E91B000C5D3AD /* QDLine.swift */; };
+		7A697589219E91B000C5D3AD /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A697585219E91B000C5D3AD /* MasterViewController.swift */; };
+		7A69758D219E91CD00C5D3AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A69758B219E91CD00C5D3AD /* Assets.xcassets */; };
+		7A69758E219E91CD00C5D3AD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7A69758C219E91CD00C5D3AD /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7A697537219E7D3500C5D3AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A697518219E7D3400C5D3AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A69751F219E7D3400C5D3AD;
+			remoteInfo = QuickDraw;
+		};
+		7A697542219E7D3500C5D3AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A697518219E7D3400C5D3AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A69751F219E7D3400C5D3AD;
+			remoteInfo = QuickDraw;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		238BC86F219330370039B6FB /* QDDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QDDocument.swift; sourceTree = "<group>"; };
-		238BC871219330370039B6FB /* QDLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QDLine.swift; sourceTree = "<group>"; };
-		23DDAD4D211B3DC8002E2A6F /* DrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DrawView.swift; path = ../../HW8_new/QuickDraw/QuickDraw/DrawView.swift; sourceTree = "<group>"; };
-		23EB21B42118FB4500DF2D58 /* QuickDraw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickDraw.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		23EB21B72118FB4500DF2D58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		23EB21B92118FB4500DF2D58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		23EB21BC2118FB4500DF2D58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		23EB21BE2118FB4600DF2D58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		23EB21C12118FB4600DF2D58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		23EB21C32118FB4600DF2D58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7A14E1DA219D114400C3E2DA /* Draws.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Draws.swift; sourceTree = "<group>"; };
-		7A14E1DD219D2C6E00C3E2DA /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		7AA83B59219E944D00C937C1 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		7A697520219E7D3400C5D3AD /* QuickDraw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickDraw.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A697523219E7D3400C5D3AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7A697527219E7D3400C5D3AD /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		7A69752A219E7D3400C5D3AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7A69752F219E7D3500C5D3AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7A697531219E7D3500C5D3AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A697536219E7D3500C5D3AD /* QuickDrawTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickDrawTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A69753A219E7D3500C5D3AD /* QuickDrawTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickDrawTests.swift; sourceTree = "<group>"; };
+		7A69753C219E7D3500C5D3AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A697541219E7D3500C5D3AD /* QuickDrawUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickDrawUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A697545219E7D3500C5D3AD /* QuickDrawUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickDrawUITests.swift; sourceTree = "<group>"; };
+		7A697547219E7D3500C5D3AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A697561219E7D7E00C5D3AD /* DrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
+		7A697582219E91B000C5D3AD /* Draws.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Draws.swift; sourceTree = "<group>"; };
+		7A697583219E91B000C5D3AD /* QDDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QDDocument.swift; sourceTree = "<group>"; };
+		7A697584219E91B000C5D3AD /* QDLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QDLine.swift; sourceTree = "<group>"; };
+		7A697585219E91B000C5D3AD /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		7A69758B219E91CD00C5D3AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A69758C219E91CD00C5D3AD /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		23EB21B12118FB4500DF2D58 /* Frameworks */ = {
+		7A69751D219E7D3400C5D3AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A697533219E7D3500C5D3AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A69753E219E7D3500C5D3AD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,61 +86,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		238BC86E219330370039B6FB /* Model */ = {
+		7A697517219E7D3400C5D3AD = {
 			isa = PBXGroup;
 			children = (
-				238BC86F219330370039B6FB /* QDDocument.swift */,
-				238BC871219330370039B6FB /* QDLine.swift */,
-				7A14E1DA219D114400C3E2DA /* Draws.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		238BC8772193303F0039B6FB /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				23EB21BB2118FB4500DF2D58 /* Main.storyboard */,
-				23EB21BE2118FB4600DF2D58 /* Assets.xcassets */,
-				23EB21C02118FB4600DF2D58 /* LaunchScreen.storyboard */,
-			);
-			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		23EB21AB2118FB4500DF2D58 = {
-			isa = PBXGroup;
-			children = (
-				23EB21B62118FB4500DF2D58 /* QuickDraw */,
-				23EB21B52118FB4500DF2D58 /* Products */,
+				7A697522219E7D3400C5D3AD /* QuickDraw */,
+				7A697539219E7D3500C5D3AD /* QuickDrawTests */,
+				7A697544219E7D3500C5D3AD /* QuickDrawUITests */,
+				7A697521219E7D3400C5D3AD /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		23EB21B52118FB4500DF2D58 /* Products */ = {
+		7A697521219E7D3400C5D3AD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				23EB21B42118FB4500DF2D58 /* QuickDraw.app */,
+				7A697520219E7D3400C5D3AD /* QuickDraw.app */,
+				7A697536219E7D3500C5D3AD /* QuickDrawTests.xctest */,
+				7A697541219E7D3500C5D3AD /* QuickDrawUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		23EB21B62118FB4500DF2D58 /* QuickDraw */ = {
+		7A697522219E7D3400C5D3AD /* QuickDraw */ = {
 			isa = PBXGroup;
 			children = (
-				7A14E1DC219D2C5400C3E2DA /* Localizable */,
-				23EB21B72118FB4500DF2D58 /* AppDelegate.swift */,
-				23DDAD4D211B3DC8002E2A6F /* DrawView.swift */,
-				23EB21B92118FB4500DF2D58 /* ViewController.swift */,
-				7AA83B59219E944D00C937C1 /* TableViewController.swift */,
-				238BC86E219330370039B6FB /* Model */,
-				238BC8772193303F0039B6FB /* Supporting Files */,
-				23EB21C32118FB4600DF2D58 /* Info.plist */,
+				7A69758A219E91CD00C5D3AD /* Localizable */,
+				7A697585219E91B000C5D3AD /* MasterViewController.swift */,
+				7A697581219E91B000C5D3AD /* Model */,
+				7A697561219E7D7E00C5D3AD /* DrawView.swift */,
+				7A697523219E7D3400C5D3AD /* AppDelegate.swift */,
+				7A697527219E7D3400C5D3AD /* DetailViewController.swift */,
+				7A697529219E7D3400C5D3AD /* Main.storyboard */,
+				7A69752E219E7D3500C5D3AD /* LaunchScreen.storyboard */,
+				7A697531219E7D3500C5D3AD /* Info.plist */,
 			);
 			path = QuickDraw;
 			sourceTree = "<group>";
 		};
-		7A14E1DC219D2C5400C3E2DA /* Localizable */ = {
+		7A697539219E7D3500C5D3AD /* QuickDrawTests */ = {
 			isa = PBXGroup;
 			children = (
-				7A14E1DD219D2C6E00C3E2DA /* Localizable.strings */,
+				7A69753A219E7D3500C5D3AD /* QuickDrawTests.swift */,
+				7A69753C219E7D3500C5D3AD /* Info.plist */,
+			);
+			path = QuickDrawTests;
+			sourceTree = "<group>";
+		};
+		7A697544219E7D3500C5D3AD /* QuickDrawUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7A697545219E7D3500C5D3AD /* QuickDrawUITests.swift */,
+				7A697547219E7D3500C5D3AD /* Info.plist */,
+			);
+			path = QuickDrawUITests;
+			sourceTree = "<group>";
+		};
+		7A697581219E91B000C5D3AD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7A697582219E91B000C5D3AD /* Draws.swift */,
+				7A697583219E91B000C5D3AD /* QDDocument.swift */,
+				7A697584219E91B000C5D3AD /* QDLine.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7A69758A219E91CD00C5D3AD /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				7A69758B219E91CD00C5D3AD /* Assets.xcassets */,
+				7A69758C219E91CD00C5D3AD /* Localizable.strings */,
 			);
 			path = Localizable;
 			sourceTree = "<group>";
@@ -109,13 +162,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		23EB21B32118FB4500DF2D58 /* QuickDraw */ = {
+		7A69751F219E7D3400C5D3AD /* QuickDraw */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 23EB21DC2118FB4600DF2D58 /* Build configuration list for PBXNativeTarget "QuickDraw" */;
+			buildConfigurationList = 7A69754A219E7D3500C5D3AD /* Build configuration list for PBXNativeTarget "QuickDraw" */;
 			buildPhases = (
-				23EB21B02118FB4500DF2D58 /* Sources */,
-				23EB21B12118FB4500DF2D58 /* Frameworks */,
-				23EB21B22118FB4500DF2D58 /* Resources */,
+				7A69751C219E7D3400C5D3AD /* Sources */,
+				7A69751D219E7D3400C5D3AD /* Frameworks */,
+				7A69751E219E7D3400C5D3AD /* Resources */,
 			);
 			buildRules = (
 			);
@@ -123,25 +176,69 @@
 			);
 			name = QuickDraw;
 			productName = QuickDraw;
-			productReference = 23EB21B42118FB4500DF2D58 /* QuickDraw.app */;
+			productReference = 7A697520219E7D3400C5D3AD /* QuickDraw.app */;
 			productType = "com.apple.product-type.application";
+		};
+		7A697535219E7D3500C5D3AD /* QuickDrawTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A69754D219E7D3500C5D3AD /* Build configuration list for PBXNativeTarget "QuickDrawTests" */;
+			buildPhases = (
+				7A697532219E7D3500C5D3AD /* Sources */,
+				7A697533219E7D3500C5D3AD /* Frameworks */,
+				7A697534219E7D3500C5D3AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A697538219E7D3500C5D3AD /* PBXTargetDependency */,
+			);
+			name = QuickDrawTests;
+			productName = QuickDrawTests;
+			productReference = 7A697536219E7D3500C5D3AD /* QuickDrawTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7A697540219E7D3500C5D3AD /* QuickDrawUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A697550219E7D3500C5D3AD /* Build configuration list for PBXNativeTarget "QuickDrawUITests" */;
+			buildPhases = (
+				7A69753D219E7D3500C5D3AD /* Sources */,
+				7A69753E219E7D3500C5D3AD /* Frameworks */,
+				7A69753F219E7D3500C5D3AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A697543219E7D3500C5D3AD /* PBXTargetDependency */,
+			);
+			name = QuickDrawUITests;
+			productName = QuickDrawUITests;
+			productReference = 7A697541219E7D3500C5D3AD /* QuickDrawUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		23EB21AC2118FB4500DF2D58 /* Project object */ = {
+		7A697518219E7D3400C5D3AD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
-				ORGANIZATIONNAME = "CSC214 Instructor";
+				ORGANIZATIONNAME = "Zhong, Zhetao";
 				TargetAttributes = {
-					23EB21B32118FB4500DF2D58 = {
+					7A69751F219E7D3400C5D3AD = {
 						CreatedOnToolsVersion = 9.4.1;
+					};
+					7A697535219E7D3500C5D3AD = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 7A69751F219E7D3400C5D3AD;
+					};
+					7A697540219E7D3500C5D3AD = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 7A69751F219E7D3400C5D3AD;
 					};
 				};
 			};
-			buildConfigurationList = 23EB21AF2118FB4500DF2D58 /* Build configuration list for PBXProject "QuickDraw" */;
+			buildConfigurationList = 7A69751B219E7D3400C5D3AD /* Build configuration list for PBXProject "QuickDraw" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -149,60 +246,105 @@
 				en,
 				Base,
 			);
-			mainGroup = 23EB21AB2118FB4500DF2D58;
-			productRefGroup = 23EB21B52118FB4500DF2D58 /* Products */;
+			mainGroup = 7A697517219E7D3400C5D3AD;
+			productRefGroup = 7A697521219E7D3400C5D3AD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				23EB21B32118FB4500DF2D58 /* QuickDraw */,
+				7A69751F219E7D3400C5D3AD /* QuickDraw */,
+				7A697535219E7D3500C5D3AD /* QuickDrawTests */,
+				7A697540219E7D3500C5D3AD /* QuickDrawUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		23EB21B22118FB4500DF2D58 /* Resources */ = {
+		7A69751E219E7D3400C5D3AD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A14E1DE219D2C6E00C3E2DA /* Localizable.strings in Resources */,
-				23EB21C22118FB4600DF2D58 /* LaunchScreen.storyboard in Resources */,
-				23EB21BF2118FB4600DF2D58 /* Assets.xcassets in Resources */,
-				23EB21BD2118FB4500DF2D58 /* Main.storyboard in Resources */,
+				7A69758E219E91CD00C5D3AD /* Localizable.strings in Resources */,
+				7A697530219E7D3500C5D3AD /* LaunchScreen.storyboard in Resources */,
+				7A69758D219E91CD00C5D3AD /* Assets.xcassets in Resources */,
+				7A69752B219E7D3400C5D3AD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A697534219E7D3500C5D3AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A69753F219E7D3500C5D3AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		23EB21B02118FB4500DF2D58 /* Sources */ = {
+		7A69751C219E7D3400C5D3AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23EB21BA2118FB4500DF2D58 /* ViewController.swift in Sources */,
-				7AA83B5A219E944D00C937C1 /* TableViewController.swift in Sources */,
-				238BC873219330370039B6FB /* QDDocument.swift in Sources */,
-				7A14E1DB219D114400C3E2DA /* Draws.swift in Sources */,
-				23EB21B82118FB4500DF2D58 /* AppDelegate.swift in Sources */,
-				23DDAD4E211B3DC8002E2A6F /* DrawView.swift in Sources */,
-				238BC875219330370039B6FB /* QDLine.swift in Sources */,
+				7A697528219E7D3400C5D3AD /* DetailViewController.swift in Sources */,
+				7A697589219E91B000C5D3AD /* MasterViewController.swift in Sources */,
+				7A697588219E91B000C5D3AD /* QDLine.swift in Sources */,
+				7A697524219E7D3400C5D3AD /* AppDelegate.swift in Sources */,
+				7A697562219E7D7E00C5D3AD /* DrawView.swift in Sources */,
+				7A697587219E91B000C5D3AD /* QDDocument.swift in Sources */,
+				7A697586219E91B000C5D3AD /* Draws.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A697532219E7D3500C5D3AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A69753B219E7D3500C5D3AD /* QuickDrawTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A69753D219E7D3500C5D3AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A697546219E7D3500C5D3AD /* QuickDrawUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		7A697538219E7D3500C5D3AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A69751F219E7D3400C5D3AD /* QuickDraw */;
+			targetProxy = 7A697537219E7D3500C5D3AD /* PBXContainerItemProxy */;
+		};
+		7A697543219E7D3500C5D3AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A69751F219E7D3400C5D3AD /* QuickDraw */;
+			targetProxy = 7A697542219E7D3500C5D3AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
-		23EB21BB2118FB4500DF2D58 /* Main.storyboard */ = {
+		7A697529219E7D3400C5D3AD /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				23EB21BC2118FB4500DF2D58 /* Base */,
+				7A69752A219E7D3400C5D3AD /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		23EB21C02118FB4600DF2D58 /* LaunchScreen.storyboard */ = {
+		7A69752E219E7D3500C5D3AD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				23EB21C12118FB4600DF2D58 /* Base */,
+				7A69752F219E7D3500C5D3AD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -210,7 +352,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		23EB21DA2118FB4600DF2D58 /* Debug */ = {
+		7A697548219E7D3500C5D3AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -270,7 +412,7 @@
 			};
 			name = Debug;
 		};
-		23EB21DB2118FB4600DF2D58 /* Release */ = {
+		7A697549219E7D3500C5D3AD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -324,64 +466,158 @@
 			};
 			name = Release;
 		};
-		23EB21DD2118FB4600DF2D58 /* Debug */ = {
+		7A69754B219E7D3500C5D3AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ESQUM36X93;
 				INFOPLIST_FILE = QuickDraw/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.examples.QuickDraw;
+				PRODUCT_BUNDLE_IDENTIFIER = example.QuickDraw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		23EB21DE2118FB4600DF2D58 /* Release */ = {
+		7A69754C219E7D3500C5D3AD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ESQUM36X93;
 				INFOPLIST_FILE = QuickDraw/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.examples.QuickDraw;
+				PRODUCT_BUNDLE_IDENTIFIER = example.QuickDraw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
+		7A69754E219E7D3500C5D3AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QuickDrawTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = example.QuickDrawTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuickDraw.app/QuickDraw";
+			};
+			name = Debug;
+		};
+		7A69754F219E7D3500C5D3AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QuickDrawTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = example.QuickDrawTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuickDraw.app/QuickDraw";
+			};
+			name = Release;
+		};
+		7A697551219E7D3500C5D3AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QuickDrawUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = example.QuickDrawUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QuickDraw;
+			};
+			name = Debug;
+		};
+		7A697552219E7D3500C5D3AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QuickDrawUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = example.QuickDrawUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QuickDraw;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		23EB21AF2118FB4500DF2D58 /* Build configuration list for PBXProject "QuickDraw" */ = {
+		7A69751B219E7D3400C5D3AD /* Build configuration list for PBXProject "QuickDraw" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				23EB21DA2118FB4600DF2D58 /* Debug */,
-				23EB21DB2118FB4600DF2D58 /* Release */,
+				7A697548219E7D3500C5D3AD /* Debug */,
+				7A697549219E7D3500C5D3AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		23EB21DC2118FB4600DF2D58 /* Build configuration list for PBXNativeTarget "QuickDraw" */ = {
+		7A69754A219E7D3500C5D3AD /* Build configuration list for PBXNativeTarget "QuickDraw" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				23EB21DD2118FB4600DF2D58 /* Debug */,
-				23EB21DE2118FB4600DF2D58 /* Release */,
+				7A69754B219E7D3500C5D3AD /* Debug */,
+				7A69754C219E7D3500C5D3AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A69754D219E7D3500C5D3AD /* Build configuration list for PBXNativeTarget "QuickDrawTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A69754E219E7D3500C5D3AD /* Debug */,
+				7A69754F219E7D3500C5D3AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A697550219E7D3500C5D3AD /* Build configuration list for PBXNativeTarget "QuickDrawUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A697551219E7D3500C5D3AD /* Debug */,
+				7A697552219E7D3500C5D3AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 23EB21AC2118FB4500DF2D58 /* Project object */;
+	rootObject = 7A697518219E7D3400C5D3AD /* Project object */;
 }

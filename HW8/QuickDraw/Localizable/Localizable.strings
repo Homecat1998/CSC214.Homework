@@ -10,3 +10,4 @@
 "str_delete"                            = "Delete";
 
 "str_warning"                     = "Do you really want to delete?";
+"str_untitled"                      = "Untitled";
