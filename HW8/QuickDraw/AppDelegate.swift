@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     
     var document = QDDocument(title: NSLocalizedString("str_untitled", comment: ""))
     
-    var dataFileName = "HeheFile"
+    var dataFileName = "QDFile"
     
     lazy var fileURL: URL = {
         let documentsDir =  FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!

@@ -45,7 +45,7 @@ class MasterViewController: UITableViewController {
 
     @objc
     func insertNewObject(_ sender: Any) {
-        let nextFile = "Untitled\(draws.getNextNum())"
+        let nextFile = NSLocalizedString("str_untitled", comment: "") + "\(draws.getNextNum())"
         print("nextFile = \(nextFile)")
         let newDraw = QDDocument(title: nextFile)
         draws.addItem(newDraw)
@@ -127,10 +127,20 @@ class MasterViewController: UITableViewController {
     
     func insertAndSelectDocumentZero() {
         
-        let newDraw = QDDocument(title: "Untitled")
+        let newDraw = QDDocument(title: NSLocalizedString("str_untitled", comment: ""))
         draws.addFirst(newDraw)
+        selectFirst()
         
         
+    }
+    
+    func selectFirst (){
+        let initialIndex = IndexPath(row: 0, section: 0)
+        self.tableView.selectRow(at: initialIndex, animated: true, scrollPosition: UITableViewScrollPosition.none)
+        
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            self.performSegue(withIdentifier: "showDetail", sender: initialIndex)
+        }
     }
     
     
